@@ -118,25 +118,9 @@ TouchDesinger2025.32050、GLSL4.30で作成。
 
 ## TouchDesigner での使い方
 
-1. **GLSL TOP** を作成し、Pixel Shader DAT に本コードを貼る
-2. GLSL TOP の Vectors ページで以下の uniform スロットを設定する:
+1.toxファイルをダウンロードし、touchdesignerにD&D。
 
-| スロット | Name | 接続先 |
-|----------|------|--------|
-| vec 0 | `iResolution` | 解像度 |
-| vec 1 | `uScene` | numObjects / cameraMode / lightMode / styleMode |
-| vec 2 | `uTetra` | objectRotate / objectSize / spread |
-| vec 3 | `uCamera` | cameraSpeed / cameraDist / stepInterval / fig8Speed |
-| vec 4 | `uScreentone` | dotScale / lineScale / lineAngle |
-| vec 5 | `uAccentColor` | RGBA |
-| vec 6 | `uBgColor` | RGBA |
-| vec 7 | `uRay` | maxSteps / maxDist / surfDist |
-| vec 8 | `uPos` | cam pos xyz（カメラモード 4 用） |
-| vec 9 | `uRad` | cam lookat xyz（カメラモード 4 用） |
-| const 0 | `iTime` | `absTime.seconds` |
-| const 1 | `uDisplayMode` | 1–4 |
-
-3. Parameter COMP 等で各値をコントロールすれば、MIDI マッピングや UI からリアルタイム制御ができる
+2. Parameter COMP で各値をコントロールすれば、MIDI マッピングや UI からリアルタイム制御ができる
 
 ---
 
